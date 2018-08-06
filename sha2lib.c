@@ -130,7 +130,7 @@ static void set_info (lua_State *L) {
 	lua_settable (L, -3);
 }
 
-static struct luaL_reg reg[] = {
+static struct luaL_Reg reg[] = {
 	{"exor", ex_or},
 	{"sha256", sha256},
 	{"sha256hex", sha256hex},
