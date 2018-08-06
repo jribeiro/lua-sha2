@@ -142,7 +142,9 @@ static struct luaL_Reg reg[] = {
 };
 
 int luaopen_sha2(lua_State *L) {
-	luaL_openlib(L, "sha2", reg, 0);
+	lua_newtable(L);
+	luaL_setfuncs(L, reg, 0);
+	// luaL_openlib(L, "sha2", reg, 0);
 	set_info (L);
 	return 1;
 }
