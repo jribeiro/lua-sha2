@@ -1,7 +1,7 @@
 package="sha2"
 version="0.2.1-1"
 source = {
-	url = "https://raw.githubusercontent.com/jribeiro/lua-sha2/master/sha2-0.2.1.zip",
+	url = "https://raw.githubusercontent.com/jribeiro/lua-sha2/master/sha2-0.2.1-1.zip",
 }
 description = {
 	summary = "Lua binding for Aaron Gifford's SHA-2 implementation",
