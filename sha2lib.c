@@ -17,7 +17,7 @@ static int ex_or (lua_State *L) {
   luaL_Buffer b;
   luaL_argcheck( L, l1 == l2, 2, "lengths must be equal" );
   luaL_buffinit(L, &b);
-  while (l1--) luaL_putchar(&b, (*s1++)^(*s2++));
+  while (l1--) luaL_addchar(&b, (*s1++)^(*s2++));
   luaL_pushresult(&b);
   return 1;
 }
